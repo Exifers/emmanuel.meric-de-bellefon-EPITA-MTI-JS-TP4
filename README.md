@@ -6,11 +6,11 @@
 
 4. implement these rules in using sagas:
 
-- each `TIME_INTERVAL` (defaults to 1 second), the target value decrements by 1,
-- a target dies by itself when its value reaches 0,
 - when a target is clicked, it is destroyed,
 - when a target is destroyed, the score is incremented by 1,
 - when a target dies by itself, the lives are decremented by 1,
+- each `TIME_INTERVAL` (defaults to 1 second), the target value decrements by 1,
+- a target dies by itself when its value reaches 0,
 - each time the value of a target decrements, its `backgroundColor` must change.
 
 5. update your game:
