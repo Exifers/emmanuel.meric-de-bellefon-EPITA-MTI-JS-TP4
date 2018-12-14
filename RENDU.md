@@ -1,0 +1,15 @@
+date: sometimes before 22/12/2018 23:59.
+subject: [MTI][js] tps <InsertLoginHere>
+body:
+
+```
+Hello, my name is <InsertFirstname> <InsertLastname>,
+
+here are the git repositories to my projects:
+
+- tp5: <InsertGitAddressToTP5>
+- tp6: <InsertGitAddressToTP6>
+- tp7: <InsertGitAddressToTP7>
+
+<InsertPolitenessHere />
+```
