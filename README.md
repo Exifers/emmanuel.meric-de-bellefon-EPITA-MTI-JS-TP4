@@ -16,5 +16,7 @@
 - after 5 killed targets, two are spawned every second
 - after 15 killed targets, three are spawned
 
+each time a target is spawned, its coordinates are randomly chosen (but bound to the size of the game layout)
+
 5. Make this game fun.
    (all bonii must be listed when you deliver your game to your bored teacher)
