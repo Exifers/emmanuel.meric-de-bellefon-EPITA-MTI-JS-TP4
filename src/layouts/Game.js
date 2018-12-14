@@ -26,9 +26,12 @@ const GameLayout = ({ isStarted, lives, score, dispatch }) => (
     }}
   >
     {isStarted ? (
-      [<Info lives={lives} score={score} />, <Target x={50} y={30} value={2} />]
+      <React.Fragment>
+        <Info lives={lives} score={score} />
+        <Target x={50} y={30} value={2} />
+      </React.Fragment>
     ) : (
-      <ButtonStart onClick={() => dispatch({ type: 'GAME_START' })} />
+      <ButtonStart onClick={() => dispatch({ type: 'GAME_START_REQUESTED' })} />
     )}
   </div>
 );
