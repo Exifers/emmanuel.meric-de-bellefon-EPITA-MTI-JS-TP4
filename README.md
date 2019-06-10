@@ -7,7 +7,7 @@
 4. implement these rules in using sagas:
 
 - when a target is clicked, it is destroyed,
-- when a target is destroyed, the score is incremented by 1,
+- when a target is destroyed, the score is incremented by `(1 * scoreMultiplier)`,
 - when a target dies by itself, the lives are decremented by 1,
 - each `TIME_INTERVAL` (defaults to 1 second), the target value decrements by 1,
 - a target dies by itself when its value reaches 0,
@@ -19,6 +19,8 @@
 - every seconds, one target is spawned
 - after 5 killed targets, two are spawned every second
 - after 15 killed targets, three are spawned
+- whenever the player kills 3 targets without losing a life, the `scoreMultiplier` is doubled
+- whenever the player loses one life, the `scoreMultiplier` is reset to 1
 
 rule: all of this must be handled from the sagas
 (e.g: you can not send events from your react components to do that).
